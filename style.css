@@ -1,0 +1,40 @@
+html {
+	background-color: #FFFFFF;
+}
+
+body {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1037px;
+	height: 1785px;
+	background: url('fridge.png');
+	margin: auto;
+}
+
+div#right_door {
+	width: 340px;
+	height: 950px;
+	position: absolute;
+	left: 575px;
+	top: 95px;
+	border: 5px solid red;
+}
+
+div#left_door {
+	width: 350px;
+	height: 435px;
+	position: absolute;
+	left: 115px;
+	top: 95px;
+	border: 5px solid green;
+}
+
+div#bottom_door {
+	width: 800px;
+	height: 465px;
+	position: absolute;
+	left: 115px;
+	top: 1150px;
+	border: 5px solid blue;
+}

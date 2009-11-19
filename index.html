@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>jQuery Summit Test Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.3.2.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+	<head>
+	<body>
+		<div id="left_door" class="door">
+
+		</div>
+
+		<div id="right_door" class="door">
+
+		</div>
+		<div id="bottom_door" class="door">
+
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var fridge = $('<div>').addClass('fridge'),
+			 	    words = $('p.fridge').text().replace('\n', '').replace('\r', '').split(' '),
+				    i, span;
+				for(i = 0; i < words.length; i++){
+					span = $("<span>").addClass('fridge_word').append(" " + words[i].trim() + " ");
+					fridge.append(span);
+				}
+				$('p.fridge').replaceWith(fridge);
+				$('div.fridge').sortable();
+			});
+		</script>
+	</body>
+</html>
